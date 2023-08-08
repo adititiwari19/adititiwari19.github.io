@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savya Khosla - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+
+<body>
+    <div class="cover-photo-container">
+        <div class="cover-photo"></div>
+        <img src="figures/savya.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="profile-details">
+            <h2>Savya Khosla</h2>
+            <p>MS CS at UIUC</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="tab active" onclick="showTab('home')">Home</a></li>
+            <li><a href="#" class="tab" onclick="showTab('research')">Research</a></li>
+            <li><a href="#" class="tab" onclick="showTab('cv')">CV</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="tab-content">
+            <p>
+                I am an MS student in the department of Computer Science at the University of Illinois 
+                Urbana-Champaign, advised by <a href="https://dhoiem.cs.illinois.edu/">Professor Derek Hoiem</a>. 
+                My research focuses on enabling machines to learn from multiple data modalities, 
+                aiming to provide them with a comprehensive understanding of the world. In this effort, 
+                I closely collaborate with researchers from the Allen Institute of AI.
+            </p>
+            <p>
+                Previously, I have worked with <a href="https://yoshuabengio.org/">Professor Yoshua Bengio</a> 
+                and <a href="https://alexlamb62.github.io/">Alex Lamb</a> at Mila - Quebec AI 
+                Institute, where I studied neural active learning under heteroskedasticity. 
+                Additionally, I worked as a software engineer at Google, focusing on enhancing Google Search's 
+                web ranking infrastructure using deep learning. I also interned with 
+                <a href="https://parthatalukdar.github.io/">Partha Talukdar's</a> research group at Google 
+                Research, where I explored multilingual representations for Indian languages. 
+            </p>
+            <p>
+                I hold a Bachelor's in Computer Engineering from Delhi Technological University, 
+                where I was advised by 
+                <a href="http://www.dtu.ac.in/Web/Departments/CSE/faculty/anilsparihar.php">Professor Anil Singh Parihar</a>.
+            </p>
+        </section>
+
+        <section id="research" class="tab-content" style="display: none;">
+            <p>
+                A full list of publications can be seen on my 
+                <a href="https://scholar.google.com/citations?user=c0ZJ6IgAAAAJ&hl=en">Google Scholar</a> 
+                author page.
+            </p>
+
+            <!-- Publication 1 -->
+            <div class="project">
+                <img src="figures/ecai.png" alt="Project 1" class="project-thumbnail">
+                <div class="project-details">
+                    <p class="pub-title">
+                        <a href="https://arxiv.org/abs/2211.00928">Neural Active Learning on Heteroskedastic Distributions</a> 
+                    </p>
+                    <p class="pub-venue">
+                        European Conference on Artificial Intelligence, 2023
+                    </p>
+                    <p class="pub-authors">
+                        <u>Savya Khosla</u>, Chew Kin Whye, Jordan T. Ash, Cyril Zhang, Kenji Kawaguchi, 
+                        and Alex Lamb
+                    </p>
+                </div>
+            </div>
+
+            <!-- Publication 2 -->
+            <div class="project">
+                <img src="figures/neuralnet.png" alt="Project 2" class="project-thumbnail">
+                <div class="project-details">
+                    <p class="pub-title">
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0893608022002684">Interpolated Adversarial Training: Achieving Robust Neural Networks without Sacrificing too much Accuracy</a> 
+                    </p>
+                    <p class="pub-venue">
+                        Neural Networks, 2022
+                    </p>
+                    <p class="pub-authors">
+                        Alex Lamb, Vikas Verma, Kenji Kawaguchi, Alexander Matyasko, 
+                        <u>Savya Khosla</u>, Juho Kannala, Yoshua Bengio
+                    </p>
+                </div>
+            </div>
+
+            <!-- Publication 3 -->
+            <div class="project">
+                <img src="figures/sdcnn.png" alt="Project 3" class="project-thumbnail">
+                <div class="project-details">
+                    <p class="pub-title">
+                        <a href="https://link.springer.com/article/10.1007/s11042-022-12615-7">S-DCNN: Stacked Deep Convolutional Neural Networks for Malware Classification</a> 
+                    </p>
+                    <p class="pub-venue">
+                        Multimedia Tools and Applications, 2022
+                    </p>
+                    <p class="pub-authors">
+                        Anil Singh Parihar, Shashank Kumar, <u>Savya Khosla</u>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Publication 4 -->
+            <div class="project">
+                <img src="figures/distshift.png" alt="Project 4" class="project-thumbnail">
+                <div class="project-details">
+                    <p class="pub-title">
+                        <a href="https://openreview.net/forum?id=6Mfsc-BYp2d">Catastrophic Failures of Neural Active Learning on Heteroskedastic Distributions</a> 
+                    </p>
+                    <p class="pub-venue">
+                        NeurIPS Workshop on Distribution Shifts, 2021
+                    </p>
+                    <p class="pub-authors">
+                        <u>Savya Khosla</u>, Alex Lamb, Jordan T. Ash, Cyril Zhang, and Kenji Kawaguchi
+                    </p>
+                </div>
+            </div>
+
+            <!-- Publication 5 -->
+            <div class="project">
+                <img src="figures/muril.png" alt="Project 5" class="project-thumbnail">
+                <div class="project-details">
+                    <p class="pub-title">
+                        <a href="https://arxiv.org/abs/2103.10730">MuRIL: Multilingual Representations for Indian Languages</a> 
+                    </p>
+                    <p class="pub-authors">
+                        Simran Khanuja, Diksha Bansal, Sarvesh Mehtani, 
+                        <u>Savya Khosla</u>, Atreyee Dey, Balaji Gopalan, Dilip Kumar Margam, 
+                        Pooja Aggarwal, Rajiv Teja Nagipogu, Shachi Dave, Shruti Gupta, 
+                        Subhash Chandra Bose Gali, Vish Subramanian, Partha Talukdar
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cv" class="tab-content" style="display: none;">
+            <div class="resume-container">
+                <div class="resume-box">
+                <iframe src="CV.pdf" width="80%" height="881px" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <!-- Contact section -->
+            <section>
+                <p>
+                    Contact me at: 
+                    <br>
+                    <i class="fa fa-envelope-square" style="font-size:16px;color:rgb(133, 132, 132)"></i> <a href="mailto:savyak2@illinois.edu">savyak2@illinois.edu</a>
+                </p>
+            </section>
+      
+            <!-- Social Profiles section -->
+            <section>
+                <p>
+                    Find me at:
+                    <br>
+                    <i class="fa fa-linkedin-square" style="font-size:16px;color:rgb(10, 102, 194)"></i> <a href="https://www.linkedin.com/in/savyakhosla/">savyakhosla</a>
+                    <br>
+                    <i class="fa fa-github-square" style="font-size:16px" class="fa"></i> <a href="https://github.com/savya08">savya08</a>
+                    <br>
+                    <i class="ai ai-google-scholar-square" style="font-size:16px;color:rgb(55, 131, 207)"></i> <a href="https://scholar.google.com/citations?user=c0ZJ6IgAAAAJ&hl=en">savyakhosla</a>
+                </p>
+            </section>
+      
+            <!-- Resume section -->
+            <section>
+                <p>
+                    Download:
+                    <br>
+                    <i class="fa fa-file" style="font-size:14px;color:rgb(133, 132, 132)"></i> <a href="CV.pdf" download>CV</a>
+                </p>
+            </section>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

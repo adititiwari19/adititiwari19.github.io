@@ -1,0 +1,188 @@
+body {
+    font-family: Optima, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-details {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-size: 28px;
+    font-family: Optima, sans-serif;
+    font-weight: 250;
+}
+
+.profile-details p {
+    margin: 0;
+    font-size: 18px;
+    color: #474646;
+    font-family: Optima, sans-serif;
+}
+
+.cover-photo-container {
+    position: relative;
+    height: 300px;
+}
+
+.cover-photo {
+    height: 80%;
+    background-image: url("figures/cover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-picture {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px double #474646;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: Optima, sans-serif;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 18px;
+    margin: 0;
+    color: #5c5b5b;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-thumbnail {
+    width: 170px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-details p {
+    margin: 0px 0;
+    font-size: 16px;
+}
+
+.pub-title {
+    font-weight: bold;
+}
+
+.pub-venue {
+    color: #474646;
+    font-weight: bold;
+}
+
+.resume-container {
+    text-align: center;
+}
+
+a {
+    color: rgb(0, 124, 213);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+nav {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 120px;
+    background-color: transparent;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #1c1e21;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px 30px;
+}
+
+.tab.active {
+    border-bottom: 3px solid #1a478a;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    color: #5c5b5b;
+    margin-top: 60px;
+    border-top: 1px solid #ccc;
+}
+  
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    margin: 0 auto;
+}
+  
+/* Optional: Add some styling to the sections to improve visual appeal */
+footer section {
+    padding-left: 75px;
+    background-color: #ffffff;
+}
+  
