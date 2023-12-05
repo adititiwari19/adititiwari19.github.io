@@ -11,6 +11,10 @@ header {
     padding: 30px;
 }
 
+#home p {
+    text-align: justify;
+}
+
 .profile-details {
     text-align: center;
     margin-top: 90px;
