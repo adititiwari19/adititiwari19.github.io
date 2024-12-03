@@ -173,7 +173,7 @@ footer {
     justify-content: center;
     line-height: 1.5;
     color: #5c5b5b;
-    margin-top: 60px;
+    margin-top: 30px;
     border-top: 1px solid #ccc;
 }
   
@@ -184,9 +184,84 @@ footer {
     margin: 0 auto;
 }
   
-/* Optional: Add some styling to the sections to improve visual appeal */
 footer section {
     padding-left: 75px;
     background-color: #ffffff;
 }
-  
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 2px 0;
+    text-align: center;
+}
+
+.description {
+    position: absolute;
+    font-family: Optima, sans-serif;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.description a {
+    color: rgb(0, 150, 255);
+    background-color: transparent;
+    font-family: Optima, sans-serif;
+    text-decoration: none;
+}
+
+.grid-item:hover .description {
+    visibility: visible;
+    font-family: Optima, sans-serif;
+    opacity: 1;
+}
+
+.click-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.click-icon:hover {
+    color: #007bff;
+}
