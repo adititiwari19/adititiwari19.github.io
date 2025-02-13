@@ -179,7 +179,6 @@ h3 {
 }
 
 
-
 footer {
     display: flex;
     justify-content: center;
@@ -199,6 +198,48 @@ footer {
 footer section {
     padding-left: 75px;
     background-color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px 0;
+    color: #5c5b5b;
+}
+
+.footer-bottom a {
+    color: #007CD5;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Styling */
+.dark-mode .footer-bottom {
+    color: white;
+}
+
+.dark-mode .footer-bottom a {
+    color: #ff93ed;
+    text-shadow: 0px 0px 5px rgba(255, 147, 237, 0.6);
+}
+
+.footer-quote {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+    padding: 02px 0;
+    color: #5c5b5b;
+}
+
+/* Subtle glow effect for dark mode */
+.dark-mode .footer-quote {
+    color: white;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
 }
 
 
