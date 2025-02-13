@@ -321,7 +321,7 @@ nav ul {
     margin: 0;
     padding: 0;
     padding-bottom: 7px;
-    /* border-bottom: 1px solid #ccc; */
+    border-bottom: 1px solid #ccc;
 }
 
 nav li {
