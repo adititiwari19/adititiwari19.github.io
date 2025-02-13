@@ -785,8 +785,87 @@ input:checked + .slider:before {
     color: white !important;
 }
 
-
-
  /* dark mode toggle ends */
 
- 
+ /* Adjusting to small screens */
+
+ @media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* Show 1 column instead of 3 */
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cover-photo {
+        height: 250px; /* Reduce the height for smaller screens */
+    }
+
+    .profile-picture {
+        width: 150px;  /* Reduce the profile picture size */
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #darkModeToggle {
+        top: 5px;
+        right: 10px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-thumbnail {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    button, a {
+        padding: 10px;
+        touch-action: manipulation;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-columns {
+        grid-template-columns: repeat(1, 1fr); /* Stack footer sections */
+        text-align: center;
+        gap: 20px;
+    }
+
+    footer section {
+        padding-left: 0;
+    }
+}
