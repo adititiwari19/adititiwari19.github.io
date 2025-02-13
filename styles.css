@@ -1,3 +1,4 @@
+
 body {
     font-family: Optima, sans-serif;
     margin: 0;
@@ -13,6 +14,10 @@ header {
 
 #home p {
     text-align: justify;
+    font-family: Optima, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.2;
 }
 
 .profile-details {
@@ -36,15 +41,17 @@ header {
 
 .cover-photo-container {
     position: relative;
-    height: 300px;
+    height: 450px; 
+    width: 100%;
 }
 
 .cover-photo {
-    height: 80%;
-    background-image: url("figures/cover.png");
+    height: 90%;
+    background-image: url("figures/cover1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Smooth transition */
 }
 
 .profile-picture {
@@ -70,35 +77,73 @@ h3 {
     font-weight: 600;
 }
 
+
+
 .title {
     font-size: 18px;
     margin: 0;
     color: #5c5b5b;
 }
 
-.project {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+.project-thumbnail {
+    /* width: 230px;
+    height: 130px;
+    margin-right: 20px; */
+
+    width: 180px;  /* Increase width */
+    height: 120px; /* Increase height */
+    object-fit: contain;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    /* Adding a subtle shadow */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); 
+    border-radius: 5px; /* Optional: Slightly rounded corners for a softer look */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.project-thumbnail {
-    width: 230px;
-    height: 130px;
-    margin-right: 20px;
+.project-thumbnail:hover {
+    transform: scale(1.05);  /* Slightly enlarges on hover */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25); /* Enhances shadow on hover */
+}
+
+
+
+/* .project-details p {
+    margin: 0px 0;
+    font-size: 16px;
+} */
+
+
+.project-details p {
+    margin: 5px 0;
+    font-family: Optima, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.2;
 }
 
 .project-details {
-    flex: 1;
-}
-
-.project-details p {
-    margin: 0px 0;
-    font-size: 16px;
+    flex: 1; /* Ensures text takes up remaining space */
+    text-align: left; /* Aligns text properly */
+    font-family: Optima, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.2;
 }
 
 .pub-title {
     font-weight: bold;
+}
+
+.pub-title2 {
+    font-family: Optima, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.2;
 }
 
 .pub-venue {
@@ -157,10 +202,12 @@ main {
 
 h2 {
     margin-top: 0;
+    font-family: Optima, sans-serif;
 }
 
 h3 {
     margin-top: 30px;
+    font-family: Optima, sans-serif;
 }
 
 ul {
@@ -171,7 +218,7 @@ ul {
 footer {
     display: flex;
     justify-content: center;
-    line-height: 1.5;
+    line-height: 1.2;
     color: #5c5b5b;
     margin-top: 30px;
     border-top: 1px solid #ccc;
@@ -194,8 +241,9 @@ footer section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
+    transform: scale(1.05);  /* Slightly enlarges on hover */
 }
 
 .grid-item {
@@ -209,13 +257,18 @@ footer section {
 }
 
 .grid-item img {
-    width: 120px;
-    height: 80px;
+    width: 180px;  /* Increase width */
+    height: 120px; /* Increase height */
     object-fit: contain;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    /* Adding a subtle shadow */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); 
+    border-radius: 5px; /* Optional: Slightly rounded corners for a softer look */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .grid-item p {
@@ -223,9 +276,10 @@ footer section {
     color: #333;
     margin: 2px 0;
     text-align: center;
+    font-family: Optima, sans-serif;
 }
 
-.description {
+/* .description {
     position: absolute;
     font-family: Optima, sans-serif;
     bottom: 10px;
@@ -238,13 +292,33 @@ footer section {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s, visibility 0.3s;
-}
+}*/
 
 .description a {
     color: rgb(0, 150, 255);
     background-color: transparent;
     font-family: Optima, sans-serif;
     text-decoration: none;
+} 
+
+.description {
+    position: absolute;
+    font-family: Optima, sans-serif;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.9); /* Darker black background */
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    border-radius: 5px;
+}
+
+.description b {
+    color: #0099ff; /* Blue bold text */
 }
 
 .grid-item:hover .description {
@@ -264,4 +338,71 @@ footer section {
 
 .click-icon:hover {
     color: #007bff;
+}
+
+/* teaching */
+#teaching {
+    display: none;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+#teaching h2 {
+    text-align: left;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;  /* Adds spacing between image and text */
+    margin-bottom: 20px; /* Space between publication entries */
+}
+
+/* .project-thumbnail {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+} */
+
+.pub-venue {
+    color: #474646;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+}
+
+.descriptionteaching {
+    font-size: 14px;
+    color: #555;
+    display: block;  /* Ensure it is always displayed */
+    visibility: visible;  /* Override hidden settings */
+    opacity: 1;  /* Ensure it's fully visible */
+    margin-top: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.2;
+}
+
+.news-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.news-date {
+    font-weight: bold;
+    width: 120px;
+    color: #007CD5; /* Blue for contrast */
+}
+
+.news-text {
+    flex-grow: 1;
+    text-align: justify;
 }
