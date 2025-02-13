@@ -533,6 +533,21 @@ body {
     transition: background-color 0.4s, color 0.4s;
 }
 
+/* Remove transition delay for text */
+.dark-mode * {
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Explicitly set text color immediately */
+.dark-mode body, 
+.dark-mode p, 
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode a {
+    transition: none !important; /* No delay in text color change */
+}
+
 /* Dark Mode */
 .dark-mode {
     background-color: #121212;
@@ -557,11 +572,6 @@ body {
 .dark-mode #darkModeToggle {
     background: #fff;
     color: #000;
-}
-
-/* Optional: Smooth transition */
-.dark-mode * {
-    transition: background 0.4s ease, color 0.4s ease;
 }
 
 /* Toggle Switch Styling */
