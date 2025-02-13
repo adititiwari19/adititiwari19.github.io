@@ -33,9 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// navigation bar in hamburger format for phones
 
-
-
+function toggleMenu() {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("show");
+}
 
 
 // smooth back to top scroll

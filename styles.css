@@ -321,7 +321,7 @@ nav ul {
     margin: 0;
     padding: 0;
     padding-bottom: 7px;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
 }
 
 nav li {
@@ -335,6 +335,48 @@ nav a {
     font-size: 17px;
     padding: 5px 30px;
 }
+
+/* Desktop Navigation */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-size: 17px;
+    padding: 5px 15px;
+}
+
+.tab.active {
+    border-bottom: 3px solid #1a478a;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
 
 a:hover {
     color: #007bff; /* Lighter blue on hover */
@@ -816,6 +858,56 @@ input:checked + .slider:before {
 
 /* Adjust Layout for Small Screens (Phones, < 768px) */
 @media screen and (max-width: 768px) {
+    /* Hamburger menu for mobile phone */
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Show menu when active */
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* Dark Mode Fix */
+    .dark-mode .nav-links {
+        background: #181818;
+    }
+
+    .dark-mode .hamburger-menu {
+        color: white;
+    }
+
     /* Make Navigation Mobile-Friendly */
     nav ul {
         flex-direction: column;
