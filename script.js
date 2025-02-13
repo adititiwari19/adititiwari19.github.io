@@ -1,3 +1,66 @@
+// name typescript
+const text = "Aditi Tiwari | PhD Student at UIUC";
+let i = 0;
+
+function typeEffect() {
+    if (i < text.length) {
+        document.getElementById("name").textContent += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 100);
+    }
+}
+window.onload = typeEffect;
+
+// Dark Mode Toggle
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("darkModeToggle");
+
+    if (localStorage.getItem("dark-mode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        toggleButton.textContent = "☀️ Light Mode";
+    }
+
+    toggleButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("dark-mode", "enabled");
+            toggleButton.textContent = "☀️ Light Mode";
+        } else {
+            localStorage.setItem("dark-mode", "disabled");
+            toggleButton.textContent = "🌙 Dark Mode";
+        }
+    });
+});
+
+
+
+// smooth back to top scroll
+window.onscroll = function () {
+    let topButton = document.getElementById("topBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        topButton.style.display = "flex";
+    } else {
+        topButton.style.display = "none";
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// dark mode 
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
+}
+window.onload = () => {
+    if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+    }
+};
+
+
 
 function showTab(tabName) {
     // Hide all tab contents

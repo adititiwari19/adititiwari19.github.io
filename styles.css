@@ -1,10 +1,53 @@
-
+/* 
 body {
     font-family: Optima, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+} */
+
+
+/* back to top */
+html {
+    scroll-behavior: smooth;
 }
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(100, 100, 100, 0.8); /* Semi-transparent grey */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Makes it circular */
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+#topBtn i {
+    font-size: 22px; /* Arrow size */
+}
+
+#topBtn:hover {
+    background-color: rgba(80, 80, 80, 1); /* Darker grey on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+/* dark mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+
 
 header {
     margin-top: 100px;
@@ -137,6 +180,29 @@ h3 {
 
 
 
+footer {
+    display: flex;
+    justify-content: center;
+    line-height: 1.2;
+    color: #5c5b5b;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}
+  
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    margin: 0 auto;
+}
+  
+footer section {
+    padding-left: 75px;
+    background-color: #ffffff;
+}
+
+
+
 .title {
     font-size: 18px;
     margin: 0;
@@ -246,6 +312,11 @@ nav a {
     padding: 5px 30px;
 }
 
+a:hover {
+    color: #007bff; /* Lighter blue on hover */
+}
+
+
 .tab.active {
     border-bottom: 3px solid #1a478a;
 }
@@ -273,26 +344,6 @@ ul {
     padding-left: 20px;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    line-height: 1.2;
-    color: #5c5b5b;
-    margin-top: 30px;
-    border-top: 1px solid #ccc;
-}
-  
-.footer-columns {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 70px;
-    margin: 0 auto;
-}
-  
-footer section {
-    padding-left: 75px;
-    background-color: #ffffff;
-}
 
 .grid-container {
     display: grid;
@@ -380,6 +431,9 @@ footer section {
 }
 
 .grid-item:hover .description {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
     visibility: visible;
     font-family: Optima, sans-serif;
     opacity: 1;
@@ -464,3 +518,265 @@ footer section {
     flex-grow: 1;
     text-align: justify;
 }
+
+
+
+/* Default Light Mode */
+body {
+    font-family: Optima, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+
+    background-color: white;
+    color: black;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Style for the Toggle Button */
+#darkModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Dark Mode Toggle Button Styling */
+.dark-mode #darkModeToggle {
+    background: #fff;
+    color: #000;
+}
+
+/* Optional: Smooth transition */
+.dark-mode * {
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Toggle Switch Styling */
+.switch {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Move slider on dark mode */
+input:checked + .slider {
+    background-color: #444;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Change text and link colors */
+.dark-mode body {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode a {
+    color: #ff93ed; /* Light blue for better contrast */
+}
+
+.dark-mode a:hover {
+    color: #66c0ff; /* Lighter blue on hover */
+}
+
+/* Change navigation background and links */
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+.dark-mode nav a {
+    color: white;
+}
+
+.dark-mode .tab.active {
+    border-bottom: 3px solid #ff93ed;
+}
+
+/* Change main content background */
+.dark-mode main {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Update Grid Boxes and Project Thumbnails */
+.dark-mode .grid-container,
+.dark-mode .project {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.dark-mode .project-thumbnail {
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.15);
+}
+
+.dark-mode .project-thumbnail:hover {
+    box-shadow: 6px 6px 15px rgba(255, 255, 255, 0.25);
+}
+
+/* Make description text visible with subtle glow */
+
+/* Dark Mode - Darker Hover Box for Experience Thumbnails */
+.dark-mode .description {
+    background-color: rgba(20, 20, 20, 0.95) !important; /* Darker background */
+    color: white !important; /* Ensure text remains white */
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3); /* Subtle glow */
+}
+
+/* Keep bold text in blue for contrast */
+.dark-mode .description b {
+    color: #ff93ed;
+}
+
+/* Update teaching section */
+.dark-mode #teaching {
+    background-color: #1e1e1e;
+}
+
+/* Adjust dark mode toggle button */
+.dark-mode #darkModeToggle {
+    background: white;
+    color: black;
+}
+
+/* Adjust scroll indicators */
+.dark-mode .dot {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .dot.active {
+    background: white;
+}
+
+/* Adjust arrows */
+.dark-mode .arrow {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.dark-mode .arrow:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Dark Mode - Experience Section Fix */
+.dark-mode .grid-container {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Add glow effect to text in the experience section */
+.dark-mode .grid-item p {
+    color: white;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+
+/* Ensure Profile Text Turns White in Dark Mode */
+.dark-mode .profile-details p {
+    color: white !important;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5); 
+}
+
+.dark-mode .pub-venue {
+    color: white !important;
+}
+
+/* Fix Teaching Section Text in Dark Mode */
+.dark-mode .descriptionteaching {
+    color: white !important;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5); /* Subtle glow for readability */
+}
+
+/* Footer Dark Mode Fix */
+.dark-mode footer {
+    background-color: #181818 !important; /* Dark background */
+    color: white !important;
+    box-shadow: 0px -2px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure footer columns and sections also turn dark */
+.dark-mode .footer-columns {
+    background-color: #181818 !important;
+}
+
+.dark-mode footer section {
+    background-color: #181818 !important;
+}
+
+/* Footer Links and Icons Glow Effect */
+.dark-mode footer a {
+    color: #ff93ed !important;
+    text-shadow: 0px 0px 5px rgba(255, 147, 237, 0.6);
+}
+
+/* Footer Icons - Adjust brightness for better visibility */
+.dark-mode footer i {
+    color: #ff93ed !important;
+    text-shadow: 0px 0px 5px rgba(255, 147, 237, 0.6);
+}
+
+/* Ensure all text in the footer is readable */
+.dark-mode .footer-columns p,
+.dark-mode footer section p {
+    color: white !important;
+}
+
+
+
+ /* dark mode toggle ends */
+
+ 
