@@ -27,15 +27,40 @@
 
 </head>
 
-<body>
+
+<div class="cover-photo-container">
+    <div class="cover-photo"></div>
+    <button class="arrow left" onclick="prevImage()">&#10094;</button>
+    <button class="arrow right" onclick="nextImage()">&#10095;</button>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="dot active" onclick="setImage(0)"></div>
+        <div class="dot" onclick="setImage(1)"></div>
+        <div class="dot" onclick="setImage(2)"></div>
+        <div class="dot" onclick="setImage(3)"></div>
+        <div class="dot" onclick="setImage(4)"></div>
+    </div>
+
+    <img src="figures/aditi.jpeg" alt="Profile Picture" class="profile-picture">
+    <div class="profile-details">
+        <h2>Aditi Tiwari</h2>
+        <p>Ph.D. Student at UIUC</p>
+    </div>
+</div>
+
+
+<!-- <body>
     <div class="cover-photo-container">
         <div class="cover-photo"></div>
+        <div class="cover-photo next"></div>
         <img src="figures/aditi.jpeg" alt="Profile Picture" class="profile-picture">
         <div class="profile-details">
             <h2>Aditi Tiwari</h2>
             <p>Ph.D. Student at UIUC</p>
         </div>
-    </div>
+
+    </div> -->
 
     <nav>
         <ul>

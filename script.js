@@ -1,3 +1,4 @@
+
 function showTab(tabName) {
     // Hide all tab contents
     const tabContents = document.getElementsByClassName("tab-content");
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showTab("home"); // Default tab
 });
 
-// Background image scroller
+
 let currentImageIndex = 0;
 const images = [
     "figures/cover1.jpg",
@@ -53,12 +54,80 @@ const images = [
     "figures/cover11.png",
     "figures/cover18.png",
     "figures/cover20.png"
-];
+];const coverPhoto = document.querySelector(".cover-photo");
+const dots = document.querySelectorAll(".dot");
 
-function changeBackgroundImage() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    document.querySelector(".cover-photo").style.backgroundImage = `url('${images[currentImageIndex]}')`;
+function updateImage() {
+    coverPhoto.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+
+    // Update active dot
+    dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentImageIndex);
+    });
 }
 
-// Change background every 5 seconds
-setInterval(changeBackgroundImage, 3000);
+// Function to go to the previous image
+function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    updateImage();
+}
+
+// Function to go to the next image
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateImage();
+}
+
+// Function to set image from scroll indicator
+function setImage(index) {
+    currentImageIndex = index;
+    updateImage();
+}
+
+// Set initial image
+updateImage();
+
+
+
+
+
+// // Background image scroller
+// let currentImageIndex = 0;
+// const images = [
+//     "figures/cover1.jpg",
+//     "figures/cover14.png",
+//     "figures/cover17.png",
+//     "figures/cover15.png",
+//     "figures/cover16.png",
+//     "figures/cover4.jpg",
+//     "figures/cover19.png",
+//     "figures/cover12.png",
+//     "figures/cover6.jpg",
+//     "figures/cover10.jpg",
+//     "figures/cover11.png",
+//     "figures/cover18.png",
+//     "figures/cover20.png"
+// ];
+
+// function changeBackgroundImage() {
+//     const coverPhoto = document.querySelector(".cover-photo");
+
+//     // Apply fade-out effect
+//     coverPhoto.classList.add("fade");
+
+//     setTimeout(() => {
+//         currentImageIndex = (currentImageIndex + 1) % images.length;
+//         coverPhoto.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+
+//         // Apply fade-in effect
+//         coverPhoto.classList.remove("fade");
+//     }, 350); // Change image halfway through fade-out transition
+// }
+
+// // function changeBackgroundImage() {
+// //     currentImageIndex = (currentImageIndex + 1) % images.length;
+// //     document.querySelector(".cover-photo").style.backgroundImage = `url('${images[currentImageIndex]}')`;
+// // }
+
+// // Change background every 5 seconds
+// setInterval(changeBackgroundImage, 3000);

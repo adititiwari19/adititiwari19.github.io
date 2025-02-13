@@ -43,6 +43,7 @@ header {
     position: relative;
     height: 450px; 
     width: 100%;
+    /* overflow: hidden; */
 }
 
 .cover-photo {
@@ -51,8 +52,65 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background-image 1s ease-in-out; /* Smooth transition */
+    /* transition: background-image 1s ease-in-out;  */
+    transition: opacity 1.5s ease-in-out;
 }
+
+.cover-photo.current {
+    opacity: 1;
+    z-index: 2;
+}
+
+.cover-photo.next {
+    opacity: 0; /* Keep the next image hidden initially */
+}
+
+/* Left and Right Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
 
 .profile-picture {
     position: absolute;
