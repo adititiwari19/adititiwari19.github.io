@@ -788,8 +788,11 @@ input:checked + .slider:before {
  /* dark mode toggle ends */
 
  /* Adjusting to small screens */
+/* ========== Responsive Design for Mobile ========== */
 
- @media screen and (max-width: 768px) {
+/* Adjust Layout for Small Screens (Phones, < 768px) */
+@media screen and (max-width: 768px) {
+    /* Make Navigation Mobile-Friendly */
     nav ul {
         flex-direction: column;
         text-align: center;
@@ -799,27 +802,51 @@ input:checked + .slider:before {
         display: block;
         margin: 10px 0;
     }
-}
 
-@media screen and (max-width: 768px) {
+    /* Grid Layout Adjustments */
     .grid-container {
-        grid-template-columns: repeat(1, 1fr); /* Show 1 column instead of 3 */
+        grid-template-columns: repeat(1, 1fr); /* Single column */
         gap: 10px;
     }
-}
 
-@media screen and (max-width: 768px) {
+    .cover-photo-container {
+        height: 220px; /* Reduce cover photo height */
+    }
+
+    /* Resize Cover Photo & Profile Picture */
     .cover-photo {
-        height: 250px; /* Reduce the height for smaller screens */
+        height: 220px; /* Reduce cover photo height */
     }
 
     .profile-picture {
-        width: 150px;  /* Reduce the profile picture size */
-        height: 150px;
+        width: 120px;  /* Reduce size for mobile */
+        height: 120px;
+        bottom: -30px; /* Keep it half inside cover */
     }
-}
 
-@media screen and (max-width: 768px) {
+    .profile-details {
+        margin-top: 40px; /* Adjust name placement */
+    }
+
+    .profile-details {
+        position: relative;
+        z-index: 10; /* Ensures text stays above profile photo */
+        margin-top: 50px; /* Adjust name placement */
+        text-align: center;
+
+    }
+
+    .profile-details h2 {
+        font-size: 22px; /* Slightly reduce name size */
+    }
+
+    .profile-details p {
+
+        font-size: 14px; /* Slightly smaller for mobile */
+        margin-top: 10px; /* Add spacing from profile pic */
+    }
+
+    /* Adjust Text and Buttons for Mobile */
     body {
         font-size: 14px;
     }
@@ -834,9 +861,8 @@ input:checked + .slider:before {
         right: 10px;
         font-size: 12px;
     }
-}
 
-@media screen and (max-width: 768px) {
+    /* Make Experience & Project Thumbnails Mobile-Friendly */
     .project {
         flex-direction: column;
         align-items: center;
@@ -848,24 +874,17 @@ input:checked + .slider:before {
         height: auto;
         max-width: 300px;
     }
-}
 
-@media screen and (max-width: 768px) {
-    button, a {
-        padding: 10px;
-        touch-action: manipulation;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
+    /* Improve Footer Layout */
     .footer-columns {
-        grid-template-columns: repeat(1, 1fr); /* Stack footer sections */
-        text-align: center;
-        gap: 20px;
+        grid-template-columns: repeat(1, 1fr); /* Stack sections */
+        text-align: justify;
+        gap: 10px;
     }
 
     footer section {
         padding-left: 0;
+        text-align: justify; /* Ensure each section text is justified */
+        padding: 10px;
     }
 }
