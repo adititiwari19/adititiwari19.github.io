@@ -314,6 +314,9 @@ nav {
     text-align: center;
     padding-top: 120px;
     background-color: transparent;
+    width: 100vw; /* Ensure it spans the full viewport width */
+    /*display: flex;*/
+    justify-content: center;  
 }
 
 nav ul {
@@ -322,6 +325,9 @@ nav ul {
     padding: 0;
     padding-bottom: 7px;
     border-bottom: 1px solid #ccc;
+   display: flex;
+   justify-content: center; /* Align items in the center
+   /* gap: 20px; /* Adds space between the menu items */
 }
 
 nav li {
@@ -874,6 +880,7 @@ input:checked + .slider:before {
     nav ul {
         flex-direction: column;
         text-align: center;
+        align-items: center; /* Center the stacked items */
     }
 
     nav li {
