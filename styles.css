@@ -310,6 +310,8 @@ a {
 }
 
 nav {
+    width: 100%;
+    max-width: none;  /* Ensures it's not limited by any max-width */
     color: #ffffff;
     text-align: center;
     padding-top: 120px;
@@ -317,6 +319,7 @@ nav {
     width: 100vw; /* Ensure it spans the full viewport width */
     /*display: flex;*/
     justify-content: center;  
+    align-items: center;      /* Centers items vertically */
 }
 
 nav ul {
@@ -325,21 +328,26 @@ nav ul {
     padding: 0;
     padding-bottom: 7px;
     border-bottom: 1px solid #ccc;
-   display: flex;
-   justify-content: center; /* Align items in the center
+    display: flex;
+    justify-content: center; 
+    align-items: center;
    /* gap: 20px; /* Adds space between the menu items */
+   display: flex; /* Makes it a flex container */
+   justify-content: center; /* Centers the items horizontally */
+   align-items: center;
+   margin-left: -2cm;
 }
 
 nav li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 nav a {
     color: #1c1e21;
     text-decoration: none;
     font-size: 17px;
-    padding: 5px 30px;
+    padding: 5px 15px;
 }
 
 .tab.active {
