@@ -167,6 +167,26 @@ header {
     transform: translateX(-50%);
 }
 
+
+.profile-picture {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px double #474646;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+    background-image: url("prof_pic.jpeg"); /* Default image */
+    background-size: cover;
+    transition: background-image 0.2s ease-in-out;
+}
+
+/* .profile-picture:hover {
+    background-image: url("figures/profile2.jpg"); } /* Image when hovered */
+
+
 h1 {
     font-size: 30px;
     margin: 0;

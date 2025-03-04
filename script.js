@@ -11,6 +11,15 @@ function typeEffect() {
 }
 window.onload = typeEffect;
 
+// Profile Picture Hover
+document.getElementById("profile-pic").addEventListener("mouseenter", function() {
+    this.src = "figures/aditi2.png"; // Change image on hover
+});
+
+document.getElementById("profile-pic").addEventListener("mouseleave", function() {
+    this.src = "figures/aditi.jpeg"; // Change back when mouse leaves
+});
+
 // Dark Mode Toggle
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("darkModeToggle");
