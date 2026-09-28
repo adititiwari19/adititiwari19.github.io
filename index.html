@@ -1,63 +1,47 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <!-- <link rel="icon" type="image/png" href="figures/favicon-16x16.png"> -->
-    <link
-  rel="icon"
-  href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😄</text></svg>"
-/>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <meta name="author" content="Aditi Tiwari" />
-    <meta name="keywords" content="Aditi Tiwari, Resume, Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Multimodal Learning, Active Learning, Data Structures, Algorithms" />
-    <meta name="robots" content="index" />
-    <meta name="revisit-after" content="14 days" />
-
-    <title>Aditi Tiwari</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-   <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H03KWHW1K3"></script>
-    <script>
+<!-- <link rel="icon" type="image/png" href="figures/favicon-16x16.png"> -->
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;😄&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Aditi Tiwari" name="author"/>
+<meta content="Aditi Tiwari, UIUC, multimodal world models, physical world understanding, creative intelligence, video understanding, Fire360, TRACE, NeurIPS" name="keywords"/>
+<meta content="index" name="robots"/>
+<meta content="14 days" name="revisit-after">
+<title>Aditi Tiwari</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet"/>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H03KWHW1K3"></script>
+<script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-H03KWHW1K3');
     </script>
-
-</head>
-
-
+</meta></head>
 <div class="cover-photo-container">
-    <div class="cover-photo"></div>
-    <button class="arrow left" onclick="prevImage()">&#10094;</button>
-    <button class="arrow right" onclick="nextImage()">&#10095;</button>
-    
-    <!-- Scroll Indicator -->
-    <div class="scroll-indicator">
-        <div class="dot active" onclick="setImage(0)"></div>
-        <div class="dot" onclick="setImage(1)"></div>
-        <div class="dot" onclick="setImage(2)"></div>
-        <div class="dot" onclick="setImage(3)"></div>
-        <div class="dot" onclick="setImage(4)"></div>
-    </div>
-
-    <img id="profile-pic" src="figures/aditi.jpeg" alt="Profile Picture" class="profile-picture">
-    <div class="profile-details">
-        <h2>Aditi Tiwari</h2>
-        <p>Ph.D. Student at <a href="https://siebelschool.illinois.edu/" target="_blank"><b>UIUC</b></p>
-    </div>
+<div class="cover-photo"></div>
+<button class="arrow left" onclick="prevImage()">❮</button>
+<button class="arrow right" onclick="nextImage()">❯</button>
+<!-- Scroll Indicator -->
+<div class="scroll-indicator">
+<div class="dot active" onclick="setImage(0)"></div>
+<div class="dot" onclick="setImage(1)"></div>
+<div class="dot" onclick="setImage(2)"></div>
+<div class="dot" onclick="setImage(3)"></div>
+<div class="dot" onclick="setImage(4)"></div>
 </div>
-
-
-
+<img alt="Profile Picture" class="profile-picture" id="profile-pic" src="figures/aditi.jpeg"/>
+<div class="profile-details">
+<h2>Aditi Tiwari</h2>
+<p>Ph.D. Student at <a href="https://siebelschool.illinois.edu/" rel="noopener noreferrer" target="_blank"><b>UIUC</b></a></p>
+</div>
+</div>
 <!-- <body>
     <div class="cover-photo-container">
         <div class="cover-photo"></div>
@@ -69,459 +53,525 @@
         </div>
 
     </div> -->
+<nav>
+<ul>
+<li><a class="tab active" href="#" onclick="showTab('home'); return false;">Home</a></li>
+<li><a class="tab" href="#" onclick="showTab('experience'); return false;">Experience &amp; Collaborations</a></li>
+<li><a class="tab" href="#" onclick="showTab('research'); return false;">Research</a></li>
+<li><a class="tab" href="#" onclick="showTab('teaching'); return false;">Teaching &amp; Mentoring</a></li>
+<li><a class="tab" href="#" onclick="showTab('blogs'); return false;">Blog</a></li>
+<li><a class="tab" href="#" onclick="showTab('recognition'); return false;">Recognition &amp; Service</a></li><li><a class="tab" href="#" onclick="showTab('cv'); return false;">CV</a></li>
+</ul>
+</nav>
+<main>
+<section class="tab-content" id="home"><p>Hi, I’m Aditi! I am a Ph.D. student in Computer Science at the <strong>University of Illinois Urbana-Champaign</strong>, advised by <a href="https://blender.cs.illinois.edu/hengji.html" rel="noopener noreferrer" target="_blank">Prof. Heng Ji</a> in the <a href="https://blender.cs.illinois.edu/people/" rel="noopener noreferrer" target="_blank">BLENDER Lab</a>. I work closely with <a href="https://siebelschool.illinois.edu/about/people/faculty/klara" rel="noopener noreferrer" target="_blank">Prof. Klara Nahrstedt</a>, <a href="https://dhoiem.cs.illinois.edu/main.html" rel="noopener noreferrer" target="_blank">Prof. Derek Hoiem</a>, and <a href="https://cs.illinois.edu/about/people/faculty/daf" rel="noopener noreferrer" target="_blank">Prof. David Forsyth</a>.</p>
+<p>My goal is to build <strong>multimodal AI systems that understand the physical world and reason creatively within it</strong>. I study how models perceive objects and scenes under severe transformations, remember relevant evidence across time, and reason about what could happen next. I am especially interested in physically grounded and creative intelligence that remains useful in real-world settings, including disaster response and other dynamic, high-stakes environments.</p>
+<p>Before my Ph.D., I earned an <strong>M.S. in Computer Science at UIUC</strong>, advised by Prof. Klara Nahrstedt and supported by the National Science Foundation. My work spans video understanding, world models, causal interventions, and multimodal reasoning, with research experience across academia and industry.</p>
+<p>I enjoy collaborating across disciplines. If you would like to discuss research or explore a new idea, <a href="mailto:aditit5@illinois.edu">please get in touch</a>.</p><div class="home-news"><h2>News</h2><div class="news-entry"><span class="news-date">Sep 2026</span><span class="news-text">Two papers accepted to NeurIPS 2026: <a href="https://arxiv.org/html/2609.12078v1">Feature Recovery</a> and <a href="https://arxiv.org/abs/2605.26396">Advancing Creative Physical Intelligence</a>.</span></div><div class="news-entry"><span class="news-date">Jun 2026</span><span class="news-text"><a href="https://arxiv.org/abs/2605.02910">CreativityBench</a> accepted to COLM 2026.</span></div><div class="news-entry"><span class="news-date">May 2026</span><span class="news-text"><a href="https://arxiv.org/abs/2512.16908">SceneDiff</a> and <a href="https://arxiv.org/abs/2609.00505">ViTAL-X</a> accepted to ECCV 2026.</span></div><div class="news-entry"><span class="news-date">May 2026</span><span class="news-text">Returned to Adobe Research for a summer research internship.</span></div><div class="news-entry"><span class="news-date">Oct 2025</span><span class="news-text">Passed my Ph.D. qualifying examination.</span></div><div class="news-entry"><span class="news-date">Sep 2025</span><span class="news-text"><a href="https://arxiv.org/abs/2506.02167">Fire360</a> accepted to NeurIPS 2025, Datasets and Benchmarks Track (Spotlight).</span></div></div></section>
 
-    <nav>
-        <ul>
-            <li><a href="#" class="tab active" onclick="showTab('home')">Home</a></li>
-            <li><a href="#" class="tab" onclick="showTab('experience')">Experience & Collaborations</a></li>
-            <li><a href="#" class="tab" onclick="showTab('research')">Research</a></li>
-            <li><a href="#" class="tab" onclick="showTab('teaching')">Teaching</a></li>
-            <li><a href="#" class="tab" onclick="showTab('blogs')">Blog</a></li>
-            <li><a href="#" class="tab" onclick="showTab('cv')">CV</a></li>
-        </ul>
-    </nav>
-
-
-
-    <main>
- 
-
-        <section id="home" class="tab-content">
-                    <!-- Introduction -->
-        <p>
-            My name is Aditi, and I am a Ph.D. student at the 
-            <strong>University of Illinois Urbana-Champaign (UIUC)</strong>, 
-            advised by <a href="https://siebelschool.illinois.edu/about/people/faculty/klara" target="_blank">
-            Dr. Klara Nahrstedt</a> and 
-            <a href="https://blender.cs.illinois.edu/hengji.html" target="_blank">Dr. Heng Ji</a>.
-            My research is driven by a deep curiosity about 
-            <strong>exploring new ideas, applying existing concepts in completely novel ways, 
-            and bridging gaps between different fields</strong>. 
-            I thrive on solving complex problems and building AI systems that have real-world impact.
-        </p>
-
-        <p>
-            My academic journey has been shaped by exciting collaborations with 
-            <a href="https://minjiazhang.github.io/" target="_blank">Dr. Minjia Zhang</a>, 
-            <a href="https://dhoiem.cs.illinois.edu/" target="_blank">Dr. Derek Hoiem</a>, 
-            <a href="https://shenlong.web.illinois.edu/" target="_blank">Dr. Shenlong Wang</a>, and 
-            <a href="https://mason.gmu.edu/~zyan4/" target="_blank">Dr. Zhisheng Yan</a>. 
-            Prior to my Ph.D., I completed my <strong>MSCS at UIUC</strong> in 2024 under 
-            <a href="https://siebelschool.illinois.edu/about/people/faculty/klara" target="_blank">Prof. Klara Nahrstedt</a>, 
-            supported by the <strong>National Science Foundation</strong>. 
-            Over the years, I have gained research experience at 
-            <strong>Rivian, George Mason University (GMU), Coordinated Science Lab (UIUC), 
-            Indian Institute of Technology (IIT) Delhi, and Birla Institute of Technology And Science, Pilani (BITS Pilani)</strong>.
-        </p>
 <!-- 
-        <p>
-            At my core, I believe that perseverance is everything. 
-            <strong>I don’t give up easily, and I love tackling challenges that push me beyond my limits.</strong>
-        </p> -->
-<!-- 
+<p class="personal-note">
+    Outside research, I love painting, sketching, making things with clay,
+    building LEGO sets, and photography.
+    <a href="#gallery" onclick="showTab('gallery'); return false;">
+        A little world beyond research &rarr;
+    </a>
+</p> -->
 
-        <p>
-            My current research directions include:
-            <ul>
-                <li><strong>Efficient Multimodal Learning & Model Optimization</strong> – Designing quantization, pruning, and adaptive processing techniques for vision-language models (VLMs).</li>
-                <li><strong>Continual Learning & Adaptive AI for Non-Stationary Environments</strong> – Developing lifelong learning models that adapt to evolving data distributions while retaining past knowledge.</li>
-                <li><strong>Video Understanding & Long-Horizon Action Recognition</strong> – Exploring action recognition, future action prediction, and video-based reasoning with efficient model architectures.</li>
-                <li><strong>3D Scene Understanding & Neural Rendering for Multimodal AI</strong> – Investigating feedforward rendering, NeRF-based techniques, and object grounding for scene perception.</li>
-                <li><strong>LLM Agents for Multimodal Tasks</strong> – Integrating large language models (LLMs) with vision and 3D understanding to create adaptive, reasoning-based AI agents.</li>
-            </ul>
-        </p> -->
 
-        <p>
-            My research interests lie in developing efficient and adaptive AI systems for multimodal learning, computer vision, and machine learning, including:
-        </p>
-        <ul>
-            <li>Efficient Multimodal Learning & Model Optimization</li>
-            <li>Continual Learning & Adaptive AI</li>
-            <li>Video Understanding & Long-Horizon Action Recognition</li>
-            <li>3D Scene Understanding & Neural Rendering</li>
-            <li>LLM Agents for Multimodal Tasks</li>
-        </ul>
+<section class="tab-content" id="experience"><p class="section-intro">Selected research and industry experience. Hover or focus on a card for details.</p><div class="grid-container"><div class="grid-item"><img alt="Adobe Research · Research Scientist Intern" loading="lazy" src="figures/adobe.png"/><p><b>Adobe Research · Research Scientist Intern</b></p><p>May 2026–Present · San Jose, CA</p><div class="description"><ul><li>Developed a causal audit of episodic memory in video and world models using read-time memory replacement and corruption interventions.</li><li>Tested whether improvements depend on the correct retrieved episode rather than generic feature support.</li></ul></div></div><div class="grid-item"><img alt="Adobe Research · Research Collaborator, CausalSliders" loading="lazy" src="figures/adobe.png"/><p><b>Adobe Research · Research Collaborator, CausalSliders</b></p><p>Sep 2025–Jan 2026 · Remote</p><div class="description"><ul><li>Developed graph-guided LoRA interventions for causally consistent image editing.</li><li>Built training and composition pipelines with intervention, minimality and conditional-independence objectives.</li></ul></div></div><div class="grid-item"><img alt="HERE Technologies · Research Collaborator, GeoDynamics" loading="lazy" src="here.png"/><p><b>HERE Technologies · Research Collaborator, GeoDynamics</b></p><p>Nov 2025–Present · Remote</p><div class="description"><ul><li>Developing a multimodal world model aligning satellite imagery and GPS trajectories for geospatial understanding.</li></ul></div></div><div class="grid-item"><img alt="Adobe Research · Research Scientist Intern" loading="lazy" src="figures/adobe.png"/><p><b>Adobe Research · Research Scientist Intern</b></p><p>May–Aug 2025 · San Jose, CA</p><div class="description"><ul><li>Built an MCP server connecting LLM agents with internal models and tools.</li><li>Studied 91+ vision-focused MCP servers, identifying protocol and security gaps.</li></ul></div></div><div class="grid-item"><img alt="Adobe Research · Research Collaborator, MAGNET" loading="lazy" src="figures/adobe.png"/><p><b>Adobe Research · Research Collaborator, MAGNET</b></p><p>Dec 2024–Feb 2025 · Remote</p><div class="description"><ul><li>Co-developed a hybrid-attention training framework for decoder-only LLM representation learning and text infilling.</li></ul></div></div><div class="grid-item"><img alt="UIUC · Research Collaborator, Multiview Vision" loading="lazy" src="figures/uiuc.png"/><p><b>UIUC · Research Collaborator, Multiview Vision</b></p><p>2025–2026 · Urbana, IL</p><div class="description"><ul><li>Research on multiview scene understanding and geometric-semantic consistency with collaborators at UIUC.</li></ul></div></div><div class="grid-item"><img alt="Rivian Automotive · Computer Vision Research Intern" loading="lazy" src="figures/rivian.png"/><p><b>Rivian Automotive · Computer Vision Research Intern</b></p><p>May–Aug 2024 · Palo Alto, CA</p><div class="description"><ul><li>Built a C/C++ image signal processing pipeline for raw-sensor conversion, demosaicing and image enhancement.</li></ul></div></div><div class="grid-item"><img alt="Coordinated Science Laboratory, UIUC · Research Assistant" loading="lazy" src="figures/csl.jpg"/><p><b>Coordinated Science Laboratory, UIUC · Research Assistant</b></p><p>Sep 2022–May 2024 · Urbana, IL</p><div class="description"><ul><li>Developed ACT360, a low-latency action-detection framework for 360-degree firefighter training videos.</li><li>Curated a 360-degree action dataset and optimized inference for deployment.</li></ul></div></div><div class="grid-item"><img alt="IIT Delhi · Machine Learning Research Intern" loading="lazy" src="figures/iit.png"/><p><b>IIT Delhi · Machine Learning Research Intern</b></p><p>May–Sep 2021 · Delhi, India</p><div class="description"><ul><li>Developed UAV object detection and autonomous route adaptation.</li></ul></div></div><div class="grid-item"><img alt="McAfee · Software Engineer Intern" loading="lazy" src="figures/mcafee.jpg"/><p><b>McAfee · Software Engineer Intern</b></p><p>Aug–Dec 2021 · Bangalore, India</p><div class="description"><ul><li>Automated HAR processing and SQL extraction with Python and Bash, reducing processing time by 58%.</li></ul></div></div><div class="grid-item"><img alt="MEDSupervision · Full Stack Developer Intern" loading="lazy" src="figures/medsupervision.png"/><p><b>MEDSupervision · Full Stack Developer Intern</b></p><p>Nov 2020–May 2021 · Delhi, India</p><div class="description"><ul><li>Developed Twilio video calling and optimized the patient portal and database.</li></ul></div></div><div class="grid-item"><img alt="QikCircle · Software Development Engineer Intern" loading="lazy" src="figures/qikcircle.jpeg"/><p><b>QikCircle · Software Development Engineer Intern</b></p><p>Feb–May 2020 · Delhi, India</p><div class="description"><ul><li>Built full-stack web features using JavaScript, Flask and SQL.</li></ul></div></div></div></section>
+<!-- Publication -->
 
-        <p>
-            I am always open to <strong>exciting collaborations</strong>—if you’d like to discuss research, AI, 
-            or just have an interesting idea to explore together, feel free to 
-            <strong>reach out to me via email</strong> at 
-            <a href="mailto:aditit5@illinois.edu">aditit5 at illinois dot edu</a>.
-        </p>
+<!-- Research -->
+<section class="tab-content" id="research" style="display: none;">
 
-        <p>
-            You can also find me on <a href="https://scholar.google.com/citations?user=qntxQjcAAAAJ&hl=en" target="_blank">Google Scholar</a>, 
-            <a href="http://linkedin.com/in/adititiwari2000" target="_blank">LinkedIn</a>, 
-            <a href="https://medium.com/@aditiitiwari2000/about" target="_blank">Medium</a>, 
-            <a href="http://github.com/adititiwari19" target="_blank">GitHub</a>, and 
-            <a href="https://www.researchgate.net/profile/Aditi-Tiwari-31" target="_blank">ResearchGate</a>.
-        </p>
-    </section>
+    <h2>Publications</h2>
 
-        <section id="experience" class="tab-content">
-            <!-- <h2>Experience & Collaborations</h2> -->
-        
-            <div class="grid-container">
-        
-                <!-- UIUC Research Collaborator -->
-                <div class="grid-item">
-                    <img src="figures/uiuc.png" alt="UIUC Research">
-                    <p><b>Research Collaborator, UIUC</b></p>
-                    <p>Jan 2025 - Present | Urbana, IL</p>
-                    <div class="description">
-                        <li> Collaborating with Prof. Derek Hoiem & Prof. Shenlong Wang on <b>feedforward rendering techniques</b> for 3D scene understanding and multimodal vision-language tasks.</li>
-                        <li> Exploring <b>region-based slot attention</b> for efficient 3D instance segmentation, improving semantic segmentation and object representation.</li>
-                        <li> Investigating <b>self-supervised learning for scene change detection</b> and 3D instance retrieval, leveraging multi-view geometric consistency.</li>
-                    </div>
-                </div>
-        
-                <!-- Rivian -->
-                <div class="grid-item">
-                    <img src="figures/rivian.png" alt="Rivian Automotive">
-                    <p><b>Research Intern (Computer Vision), Rivian Automotive</b></p>
-                    <p>May 2024 - Aug 2024 | Palo Alto, CA</p>
-                    <div class="description">
-                        <li> Designed and coded <b>custom Image Signal Processing (ISP) pipeline</b> from scratch, converting raw sensor data into RGB/YUV formats.</li>
-                        <li> Implemented core functions in <b>C/C++</b> (histogram equalization, demosaicing, gamma correction) with <b>2-4s latency</b>, surpassing company benchmarks.</li>
-                        <li> Reduced manual input by <b>85%</b> through automated tuning of image processing parameters.</li>
-                    </div>
-                </div>
-        
-                <!-- Coordinated Science Lab (UIUC) -->
-                <div class="grid-item">
-                    <img src="figures/csl.jpg" alt="Coordinated Science Lab">
-                    <p><b>Research Assistant (CV/ML), Coordinated Science Laboratory, UIUC</b></p>
-                    <p>Sep 2022 - May 2024 | Urbana, IL</p>
-                    <div class="description">
-                        <li> Curated <b>first action detection dataset for 360-degree firefighting videos</b>, developed <b>custom annotation scripts</b>.</li>
-                        <li> Developed <b>ACT360</b>, a <b>quantized, low-latency action detection model</b> surpassing YOWO with <b>4% mAP improvement</b> (0.865) at <b>48ms/frame inference</b>.</li>
-                        <li> Optimized ACT360 for <b>real-world deployment</b>, reducing inference time to <b>33ms</b> while maintaining <b>0.850 mAP</b>.</li>
-                        <li> Successfully deployed ACT360 at <b>Illinois State Fire Department</b>, making firefighter training analysis <b>95% faster</b>.</li>
-                    </div>
-                </div>
+    <p class="pub-title2">
+        I work on multimodal world models, physical-world understanding,
+        video memory, causal interventions, and creative reasoning.
+        For a complete and up-to-date list, see
+        <a href="https://scholar.google.com/citations?user=qntxQjcAAAAJ&amp;hl=en"
+           target="_blank" rel="noopener noreferrer">Google Scholar</a>.
+    </p>
 
-                <!-- George Mason University (GMU)  -->
-                <div class="grid-item">
-                    <img src="figures/gmu.png" alt="George Mason University">
-                    <p><b>Research Collaborator, George Mason University</b></p>
-                    <p>Sep 2022 - Sep 2023 | Fairfax, VA</p>
-                    <div class="description">
-                        <li> Conducted research under <a href="https://mason.gmu.edu/~zyan4/" target="_blank"><b>Dr. Zhisheng Yan</b></a> on <b>efficient real-time video analytics</b> for resource-constrained environments.</li>
-                        <li> Designed a <b>low-latency action detection model</b> for <b>real-time surveillance applications</b>, leveraging <b>temporal filtering and multi-view learning techniques</b>.</li>
-                        <li> Evaluated model performance across <b>IoT-enabled edge devices</b>, achieving a <b>30% improvement in computational efficiency</b> while maintaining high detection accuracy.</li>
-                    </div>
-                </div>
-        
-                <!-- IIT Delhi -->
-                <div class="grid-item">
-                    <img src="figures/iit.png" alt="IIT Delhi">
-                    <p><b>Machine Learning Research Intern, IIT Delhi</b></p>
-                    <p>May 2021 - Sep 2021 | Delhi, India</p>
-                    <div class="description">
-                        <li> Engineered <b>UAV for autonomous object detection and route adaptation</b>, achieving <b>88.21% accuracy</b> (matching SOTA).</li>
-                    </div>
-                </div>
-        
-                <!-- McAfee -->
-                <div class="grid-item">
-                    <img src="figures/mcafee.jpg" alt="McAfee">
-                    <p><b>Software Engineer Intern, McAfee Inc.</b></p>
-                    <p>Aug 2021 - Dec 2021 | Bangalore, India</p>
-                    <div class="description">
-                        <li> Optimized <b>HAR file processing automation</b>, reducing processing time by <b>58%</b> using <b>Python & Bash</b>.</li>
-                        <li> Built <b>responsive customer query interface</b> with AngularJS, JavaScript, cutting development time by <b>15%</b>.</li>
-                        <li> Automated SQL-based data extraction, saving <b>6 person-hours/week</b>.</li>
-                    </div>
-                </div>
+    <h3>2026</h3>
 
-                <!-- Birla Institute of Technology and Science (BITS Pilani)  -->
-                <div class="grid-item">
-                    <img src="figures/bits.png" alt="BITS Pilani">
-                    <p><b>Research Intern, Birla Institute of Technology and Science (BITS), Pilani</b></p>
-                    <p>Jan 2021 - June 2021 | Pilani, India</p>
-                    <div class="description">
-                        <li> Worked under <a href="https://scholar.google.com/citations?user=pL5TogoAAAAJ&hl=en" target="_blank"><b>Dr. Vinay Chamola</b></a> on the study of <b>public key post-quantum cryptosystems</b>.</li>
-                        <li> Researched <b>code-based, lattice-based, multivariate-based, supersingular elliptic curve isogeny</b>, and <b>hybrid cryptosystems</b> to assess their feasibility in <b>post-quantum security protocols</b>.</li>
-                        <li> Research findings contribute towards a <b>pending research paper</b>, focusing on <b>quantum-safe cryptographic solutions</b> for modern computing architectures.</li>
-                    </div>
-                </div>
-        
-                <!-- MEDSupervision -->
-                <div class="grid-item">
-                    <img src="figures/medsupervision.png" alt="MEDSupervision">
-                    <p><b>Full Stack Developer Intern, MEDSupervision (Startup)</b></p>
-                    <p>Nov 2020 - May 2021 | Delhi, India</p>
-                    <div class="description">
-                        <li> Integrated <b>real-time video calling</b> using <b>Twilio API</b>, increasing user engagement by <b>37%</b>.</li>
-                        <li> Redesigned <b>patient portal interface</b>, improving usability for medical staff and patients.</li>
-                        <li> Optimized <b>database structure</b> (~10,000 entries), achieving <b>50% faster data retrieval</b>.</li>
-                    </div>
-                </div>
-        
-                <!-- QikCircle -->
-                <div class="grid-item">
-                    <img src="figures/qikcircle.jpeg" alt="QikCircle">
-                    <p><b>Software Development Engineer Intern, QikCircle (Startup)</b></p>
-                    <p>Feb 2020 - May 2020 | Delhi, India</p>
-                    <div class="description">
-                        <li> Developed <b>front-end using HTML, CSS, JavaScript</b>, boosting user engagement by <b>25%</b>.</li>
-                        <li> Improved <b>backend functionalities</b> with <b>Python/Flask</b> for seamless SQL-based data retrieval.</li>
-                        <li> Designed <b>user registration system</b>, reducing account creation time by <b>40%</b>.</li>
-                    </div>
-                </div>
-        
-            </div>
-        </section>
-        
+    <div class="project">
+        <img class="project-thumbnail" src="frm.png" loading="lazy"
+             alt="Feature Recovery paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/html/2609.12078v1" target="_blank" rel="noopener noreferrer">
+                    Feature Recovery for Object Understanding After Irreversible Physical Damage
+                </a>
+            </p>
+            <p class="pub-venue">NeurIPS 2026</p>
+            <p class="pub-summary">
+                TRACE and feature recovery for understanding objects after irreversible fire damage.
+            </p>
+        </div>
+    </div>
 
- 
-        <!-- Publication -->
+    <div class="project">
+        <img class="project-thumbnail" src="acb.png" loading="lazy"
+             alt="Creative Physical Intelligence paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2605.26396" target="_blank" rel="noopener noreferrer">
+                    Advancing Creative Physical Intelligence in Large Multimodal Models
+                </a>
+            </p>
+            <p class="pub-venue">NeurIPS 2026</p>
+            <p class="pub-summary">
+                Affordance-grounded creative tool use in multimodal models.
+            </p>
+        </div>
+    </div>
 
-        <section id="research" class="tab-content" style="display: none;">
+    <div class="project">
+        <img class="project-thumbnail" src="vital.png" loading="lazy"
+             alt="ViTAL-X paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2609.00505" target="_blank" rel="noopener noreferrer">
+                    ViTAL-X: Video-Text Alignment with Cross-Modal Temporal Edits
+                </a>
+            </p>
+            <p class="pub-venue">ECCV 2026</p>
+        </div>
+    </div>
 
-                <h2>Publications</h2>
+    <div class="project">
+        <img class="project-thumbnail" src="scenediff.png" loading="lazy"
+             alt="SceneDiff paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2512.16908" target="_blank" rel="noopener noreferrer">
+                    SceneDiff: Geometric-Semantic Consistency for Multiview Change Detection
+                </a>
+            </p>
+            <p class="pub-venue">ECCV 2026</p>
+        </div>
+    </div>
 
-                <p class="pub-title2">
-                    My research interests lie at the intersection of Large Language Models (LLMs), Efficient Multimodal Learning, Computer Vision, and AI System Optimization. I am particularly interested in developing scalable and resource-efficient AI models that seamlessly integrate vision and language understanding. My work focuses on enhancing the efficiency, adaptability, and interpretability of multimodal systems while optimizing their deployment for real-world applications.
-                </p>
+    <div class="project">
+        <img class="project-thumbnail" src="cb.png" loading="lazy"
+             alt="CreativityBench paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2605.02910" target="_blank" rel="noopener noreferrer">
+                    CreativityBench: Evaluating Agent Creative Reasoning via Affordance-Based Tool Repurposing
+                </a>
+            </p>
+            <p class="pub-venue">COLM 2026</p>
+        </div>
+    </div>
 
-                <p class="pub-title2">
-                    A full list of publications can be seen on my 
-                    <a href="https://scholar.google.com/citations?user=qntxQjcAAAAJ&hl=en" target="_blank">Google Scholar</a> 
-                    author page.<br>
-                    (* denotes equal contribution)
-                </p>    
-                
-                
-                <!-- Under Review -->
-                <h3>Under Review</h3>
-                <div class="project">
-                    <img src="figures/magnet.png" alt="MAGNET" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            <a href="https://arxiv.org/abs/2501.08648" target="_blank">
-                            MAGNET: Augmenting Generative Decoders with Representation Learning and Infilling Capabilities
-                            </a>
-                        </p>
-                        <p class="pub-authors">
-                            Savya Khosla, <u>Aditi Tiwari</u>, Kushal Kafle, Simon Jenni, Handong Zhao, John Collomosse, Jing Shi
-                        </p>
-                        <p class="pub-venue">
-                            Under Review, Feb 2025
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="project">
-                    <img src="figures/act360.png" alt="ACT360" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            ACT360: Action-Centric Training with 360-Degree Video Analytics for First Responders
-                        </p>
-                        <p class="pub-authors">
-                            <u>Aditi Tiwari</u>, Dr. Klara Nahrstedt
-                        </p>
-                        <p class="pub-venue">
-                            Under Review, Feb 2025
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="project">
-                    <img src="figures/quantization.png" alt="Quantization LMMs" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            Balancing Speed and Precision: Comparing Latency and Accuracy Benchmarks in Quantized and Full-Precision LMMs
-                        </p>
-                        <p class="pub-authors">
-                            <u>Aditi Tiwari</u>*, Benjamin Civjan*
-                        </p>
-                        <p class="pub-venue">
-                            Under Review, Feb 2025
-                        </p>
-                    </div>
-                </div>
-            
-                <!-- Peer-Reviewed Journal & Conference Papers -->
-                <h3>Peer-Reviewed Journal & Conference Papers</h3>
-            
-                <div class="project">
-                    <img src="figures/st360.png" alt="ST-360" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            <a href="https://dl.acm.org/doi/10.1145/3694685" target="_blank">
-                                ST-360: Spatial–Temporal Filtering-Based Low-Latency 360-Degree Video Analytics Framework
-                            </a>
-                        </p>
-                        <p class="pub-authors">
-                            Jiaxi Li, Jingwei Liao, Bo Chen, Anh Nguyen, <u>Aditi Tiwari</u>, Qian Zhou, Zhisheng Yan, Klara Nahrstedt
-                        </p>
-                        <p class="pub-venue">
-                            ACM Transactions on Multimedia Computing, Communications and Applications, 2024
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="project">
-                    <img src="figures/latencyaware.png" alt="Latency-Aware 360-Degree Video" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            <a href="https://dl.acm.org/doi/10.1145/3592473.3592568" target="_blank">
-                                Latency-Aware 360-Degree Video Analytics Framework for First Responders Situational Awareness
-                            </a>
-                        </p>
-                        <p class="pub-authors">
-                            Jiaxi Li, Jingwei Liao, Bo Chen, Anh Nguyen, <u>Aditi Tiwari</u>, Qian Zhou, Zhisheng Yan, Klara Nahrstedt
-                        </p>
-                        <p class="pub-venue">
-                            ACM NOSSDAV, 2023
-                        </p>
-                    </div>
-                </div>
-            
-                <!-- Thesis and Posters -->
-                <h3>Thesis and Posters</h3>
-            
-                <div class="project">
-                    <img src="figures/firefighter.png" alt="Firefighter Training Thesis" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            <a href="https://www.ideals.illinois.edu/items/131676" target="_blank">
-                                Action Detection in In-Classroom Firefighter Training: A 360-Degree Video Analytics Service
-                            </a>
-                        </p>
-                        <p class="pub-authors">
-                            <u>Aditi Tiwari</u>
-                        </p>
-                        <p class="pub-venue">
-                            Masters Thesis, UIUC
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="project">
-                    <img src="figures/360video.png" alt="360 Video Representations" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            A Comprehensive Exploration of 360-Degree Video Representations
-                        </p>
-                        <p class="pub-authors">
-                            <u>Aditi Tiwari</u>
-                        </p>
-                        <p class="pub-venue">
-                            Multimedia Operating Systems and Networking (MONET) Research Group, 2022 - Poster
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="project">
-                    <img src="figures/transformer.png" alt="Transformer-Based Video Summarization" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            Transforming Content: A Transformer-Based Approach to Video Summarization
-                        </p>
-                        <p class="pub-authors">
-                            <u>Aditi Tiwari</u>
-                        </p>
-                        <p class="pub-venue">
-                            GN Institute of Technology Undergraduate Research Presentation, 2022 - Poster
-                        </p>
-                    </div>
-                </div>
-            
-            </section>
+    <h3>2025</h3>
 
-            <section id="cv" class="tab-content" style="display: none;">
-                <div class="resume-container">
-                    <div class="resume-box">
-                    <iframe src="CV.pdf" width="80%" height="881px" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </section>
-        
-            <!-- Teaching Section -->
-            <section id="teaching" class="tab-content" style="display: none;">
-                <!-- <h2>Teaching Experience</h2> -->
+    <div class="project">
+        <img class="project-thumbnail" src="fire360.png" loading="lazy"
+             alt="Fire360 paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2506.02167" target="_blank" rel="noopener noreferrer">
+                    Fire360: A Benchmark for Robust Perception and Episodic Memory in Degraded 360-Degree Firefighting Videos
+                </a>
+            </p>
+            <p class="pub-venue">NeurIPS 2025, Datasets and Benchmarks Track · Spotlight</p>
+        </div>
+    </div>
 
-                <div class="project">
-                    <img src="figures/uiuc.png" alt="Thesis Co-advisor" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            Thesis Co-advisor, UIUC
-                        </p>
-                        <p class="pub-authors">
-                            Undergraduate Student for Senior Thesis
-                        </p>
-                        <p class="pub-venue">
-                            Urbana, IL | Aug 2023 - May 2024
-                        </p>
-                        <p class="descriptionteaching">
-                            Co-advised an undergraduate student, <a href="https://www.linkedin.com/in/haozhenzheng/" target="_blank">Haozhen Zhang</a>, in her senior thesis with 
-                            <a href="https://siebelschool.illinois.edu/about/people/faculty/klara" target="_blank">Professor Klara Nahrstedt</a>. 
-                            Our research focused on <strong>real-time detection of actions in 360-degree videos</strong>, leveraging 
-                            <strong>advanced image segmentation models</strong> to enhance detection precision and efficiency.
-                        </p>
-                    </div>
-                </div>
+    <div class="project">
+        <img class="project-thumbnail" src="figures/magnet.png" loading="lazy"
+             alt="MAGNET paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2501.08648" target="_blank" rel="noopener noreferrer">
+                    MAGNET: Augmenting Generative Decoders with Representation Learning and Infilling Capabilities
+                </a>
+            </p>
+            <p class="pub-venue">ACL 2025 · Main Conference</p>
+        </div>
+    </div>
 
-                <div class="project">
-                    <img src="figures/datasciencediscovery.jpg" alt="Graduate Teaching Assistant" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            Graduate Teaching Assistant, UIUC
-                        </p>
-                        <p class="pub-authors">
-                            CS107 Data Science Discovery
-                        </p>
-                        <p class="pub-venue">
-                            Urbana, IL | Aug 2023 - Dec 2023
-                        </p>
-                        <p class="descriptionteaching">
-                            Lab instructor for a class of <strong>1000+ students</strong>, leading lab sections and delivering lectures 
-                            on core data science concepts. Developed comprehensive course materials, including guides 
-                            for complex topics, and conducted <strong>office hours</strong> to provide additional academic support.
-                        </p>
-                    </div>
-                </div>
-            </section>
+    <div class="project">
+        <img class="project-thumbnail" src="figures/act360.png" loading="lazy"
+             alt="ACT360 paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2503.12852" target="_blank" rel="noopener noreferrer">
+                    ACT360: An Efficient 360-Degree Action Detection and Summarization Framework for Mission-Critical Training and Debriefing
+                </a>
+            </p>
+            <p class="pub-venue">
+                IEEE SMARTCOMP 2025 ·
+                <a href="https://www.linkedin.com/posts/illinoissiebelschool_congratulations-to-cs-phd-student-aditi-activity-7353814604164026370-Nfvu"
+                   target="_blank" rel="noopener noreferrer">Best Paper Award</a>
+            </p>
+        </div>
+    </div>
 
-            <!-- Blog  -->
+    <h3>2024</h3>
 
-            <section id="blogs" class="tab-content" style="display: none;">
-                <h2>Blog</h2>
-            
-                <div class="project">
-                    <img src="figures/360blog.png" alt="360-Degree Videos Blog" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            <a href="https://medium.com/@aditiitiwari2000/introduction-to-360-degree-videos-c578a7bc341e" target="_blank">
-                                Introduction to 360-Degree Videos
-                            </a>
-                        </p>
-                        <p class="pub-venue">
-                            Published on Medium
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="project">
-                    <img src="figures/crpyto.png" alt="Cryptography Blog" class="project-thumbnail">
-                    <div class="project-details">
-                        <p class="pub-title">
-                            <a href="https://medium.com/@aditiitiwari2000/cryptography-and-cryptosystems-ecd7f92d7eed" target="_blank">
-                                Cryptography and Cryptosystems
-                            </a>
-                        </p>
-                        <p class="pub-venue">
-                            Published on Medium
-                        </p>
-                    </div>
-                </div>
-            
-            </section>
-            
-            <!-- news -->
-            <!-- <section id="news" class="tab-content" style="display: none;">
+    <div class="project">
+        <img class="project-thumbnail" src="figures/st360.png" loading="lazy"
+             alt="ST-360 paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://dl.acm.org/doi/10.1145/3694685" target="_blank" rel="noopener noreferrer">
+                    ST-360: Spatial-Temporal Filtering-Based Low-Latency 360-Degree Video Analytics Framework
+                </a>
+            </p>
+            <p class="pub-venue">ACM TOMM 2024</p>
+        </div>
+    </div>
+
+    <h3>2023</h3>
+
+    <div class="project">
+        <img class="project-thumbnail" src="figures/latencyaware.png" loading="lazy"
+             alt="Latency-Aware video analytics paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://dl.acm.org/doi/10.1145/3592473.3592568"
+                   target="_blank" rel="noopener noreferrer">
+                    Latency-Aware 360-Degree Video Analytics Framework for First Responders Situational Awareness
+                </a>
+            </p>
+            <p class="pub-venue">ACM NOSSDAV 2023</p>
+        </div>
+    </div>
+
+    <h3>Workshop Papers and Refereed Proceedings</h3>
+
+    <div class="project">
+        <img class="project-thumbnail" src="causalslider.png" loading="lazy"
+             alt="CausalSliders paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://iclr.cc/virtual/2026/10018065"
+                   target="_blank" rel="noopener noreferrer">
+                    CausalSliders: Graph-Guided LoRA Interventions for Causally Consistent Image Editing
+                </a>
+            </p>
+            <p class="pub-venue">ICLR 2026 · World Models and ReALM-GEN Workshops</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img class="project-thumbnail" src="camcue.png" loading="lazy"
+             alt="CAMCUE paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2602.06041" target="_blank" rel="noopener noreferrer">
+                    CAMCUE: Predicting Camera Pose from Perspective Descriptions for Spatial Reasoning
+                </a>
+            </p>
+            <p class="pub-venue">ICLR 2026 · World Models Workshop</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img class="project-thumbnail" src="reveal.png" loading="lazy"
+             alt="Stress Tests REVEAL paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/html/2602.11244v1" target="_blank" rel="noopener noreferrer">
+                    Stress Tests REVEAL Fragile Temporal and Visual Grounding in Video-Language Models
+                </a>
+            </p>
+            <p class="pub-venue">ICML 2026 · Combining Theory and Benchmarks Workshop</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img class="project-thumbnail" src="mcp.png" loading="lazy"
+             alt="MCP for Vision Systems paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2509.22814" target="_blank" rel="noopener noreferrer">
+                    Model Context Protocol for Vision Systems: Audit, Security, and Protocol Extensions
+                </a>
+            </p>
+            <p class="pub-venue">
+                NeurIPS 2025 LAW and SEA Workshops ·
+                <a href="https://link.springer.com/book/9789819209408"
+                   target="_blank" rel="noopener noreferrer">Springer CCIS, vol. 2759</a>
+            </p>
+        </div>
+    </div>
+
+    <h3>Preprints and Ongoing Work</h3>
+
+    <div class="project">
+        <img class="project-thumbnail" src="acv.png" loading="lazy"
+             alt="Video Memory paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/html/2609.12090" target="_blank" rel="noopener noreferrer">
+                    Does Video Memory Use What It Retrieves? A Causal Audit of Memory Specificity
+                </a>
+            </p>
+            <p class="pub-venue">Preprint / ongoing work</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img class="project-thumbnail" src="llmforecast.png" loading="lazy"
+             alt="Event Forecasting paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/html/2609.12101v1" target="_blank" rel="noopener noreferrer">
+                    Competence-Gated Pooling of Language Models and Priors for Event Forecasting
+                </a>
+            </p>
+            <p class="pub-venue">Preprint / ongoing work</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img class="project-thumbnail" src="osexpert.png" loading="lazy"
+             alt="OSExpert paper thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://arxiv.org/abs/2603.07978" target="_blank" rel="noopener noreferrer">
+                    OSExpert: Computer-Use Agents Learning Professional Skills via Exploration
+                </a>
+            </p>
+            <p class="pub-venue">Preprint / ongoing work</p>
+        </div>
+    </div>
+
+    <h3>Master's Thesis</h3>
+
+    <div class="project">
+        <img class="project-thumbnail" src="figures/firefighter.png" loading="lazy"
+             alt="Master's thesis thumbnail"/>
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://www.ideals.illinois.edu/items/131676"
+                   target="_blank" rel="noopener noreferrer">
+                    Action Detection in In-Classroom Firefighter Training: A 360-Degree Video Analytics Service
+                </a>
+            </p>
+            <p class="pub-venue">University of Illinois Urbana-Champaign · 2024</p>
+        </div>
+    </div>
+
+</section>
+<section class="tab-content" id="recognition" style="display: none;"><h3>Honors &amp; Awards</h3><ul class="recognition-list"><li><strong>ICML Gold Reviewer Award</strong> · 2026</li><li><strong>NeurIPS Spotlight</strong> · Fire360, Datasets and Benchmarks Track · 2025</li><li><strong>IEEE SMARTCOMP Best Paper Award</strong> · ACT360 · 2025</li><li><strong>URSA Best Research Poster Award (Research Mentor)</strong> · UIUC · 2025</li><li>List of Teachers Ranked as Excellent by Their Students · UIUC · 2023–2024</li><li>GNIT Fellowship Award for Undergraduate Research · 2022</li><li>Best Research Poster Award · GN Institute of Technology · 2022</li><li>Gold Medalist, B.Tech. Computer Science · GGSIPU · 2022</li></ul><h3>Fellowships &amp; Research Funding</h3><ul class="recognition-list"><li>Amazon Alexa Research Gift · Authored the selected research proposal · Fall 2026</li><li>Adobe Research Grant · Spring 2026</li><li>UIUC Computer Science Departmental Fellowship · 2025–2026</li><li>Thomas M. Siebel School Fellowship · 2024–2025</li><li>NSF-supported M.S. research · NSF IIS 21-40645 · 2022–2024</li></ul><h3>Academic Service</h3><ul class="recognition-list"><li>Conference reviewer · ICLR (2026, 2027), NeurIPS (2026), ICML (2026), AAAI (2027), WACV (2027), NLDL (2027), TMLR (2026)</li><li>Workshop reviewer · NeurIPS PhysUnderstand (2026); NeurIPS LAW, CauScien and AI for Science workshops (2025)</li><li>Artifact Evaluation Committee · ACM SIGCOMM 2025</li><li>Seminar organizer · UIUC IMMERSE, Vision Lunch and NLP External Speaker Series</li></ul><h3>Media Coverage</h3><ul class="recognition-list"><li><a href="https://siebelschool.illinois.edu/news" rel="noopener noreferrer" target="_blank">Siebel School of Computing and Data Science</a> · Illinois AI research at NeurIPS 2025 · Jan 2026</li><li><a href="https://ece.illinois.edu/newsroom" rel="noopener noreferrer" target="_blank">Illinois ECE</a> · Fire360 and MCP research coverage · Dec 2025</li><li>Siebel School announcement · IEEE SMARTCOMP 2025 Best Paper Award</li></ul></section><section class="tab-content" id="cv" style="display: none;">
+<div class="resume-container">
+<div class="resume-box">
+<iframe frameborder="0" height="881px" src="CV.pdf" width="80%"></iframe>
+</div>
+</div>
+</section>
+<!-- Teaching Section -->
+<section class="tab-content" id="teaching" style="display: none;"><h3>Research Mentoring</h3><div class="project"><img alt="Research Mentor · UIUC thumbnail" class="project-thumbnail" loading="lazy" src="combined_logos.png"/><div class="project-details"><p class="pub-title">Research Mentor · UIUC</p><p class="pub-venue">Aug 2025–Present</p><p class="pub-summary">Mentored five students across UIUC, UMD and NTU Singapore in world models, video understanding and multimodal reasoning: <a href="https://scholar.google.com/scholar?q=Sofia%20Stoica%20computer%20vision%20UIUC" rel="noopener noreferrer" target="_blank">Sofia Stoica</a>, <a href="https://scholar.google.com/scholar?q=Haengbok%20Chung%20UIUC" rel="noopener noreferrer" target="_blank">Haengbok Chung</a>, <a href="https://scholar.google.com/scholar?q=Aashrith%20Bandaru%20UIUC" rel="noopener noreferrer" target="_blank">Aashrith Bandaru</a>, <a href="https://scholar.google.com/scholar?q=Krish%20Patel%20University%20of%20Maryland%20research" rel="noopener noreferrer" target="_blank">Krish Patel</a>, <a href="https://scholar.google.com/scholar?q=Zihang%20Lin%20Nanyang%20Technological%20University" rel="noopener noreferrer" target="_blank">Zihang Lin</a>.</p></div></div><div class="project"><img alt="Illinois Undergraduate Research Scholars (URSA) Mentor thumbnail" class="project-thumbnail" loading="lazy" src="ursa.png"/><div class="project-details"><p class="pub-title">Illinois Undergraduate Research Scholars (URSA) Mentor</p><p class="pub-venue">Aug–Dec 2025 · Best Research Poster Award</p><p class="pub-summary">Mentored <a href="https://scholar.google.com/scholar?q=Tia%20Atul%20Shrikhande%20UIUC" rel="noopener noreferrer" target="_blank">Tia Atul Shrikhande</a> and <a href="https://scholar.google.com/scholar?q=Abhay%20Pokhriyal%20UIUC" rel="noopener noreferrer" target="_blank">Abhay Pokhriyal</a> on counterfactual reasoning in video-language models.</p></div></div><div class="project"><img alt="Undergraduate Thesis Co-advisor · UIUC thumbnail" class="project-thumbnail" loading="lazy" src="figures/uiuc.png"/><div class="project-details"><p class="pub-title">Undergraduate Thesis Co-advisor · UIUC</p><p class="pub-venue">Aug 2023–May 2024</p><p class="pub-summary">Co-advised <a href="https://scholar.google.com/scholar?q=Haozhen%20Zheng%20UIUC" rel="noopener noreferrer" target="_blank">Haozhen Zheng</a> with <a href="https://siebelschool.illinois.edu/about/people/faculty/klara" rel="noopener noreferrer" target="_blank">Prof. Klara Nahrstedt</a> on 360-degree video action detection.</p></div></div><h3>Teaching</h3><div class="project"><img alt="Graduate Teaching Assistant · CS 441 Applied Machine Learning thumbnail" class="project-thumbnail" loading="lazy" src="figures/uiuc.png"/><div class="project-details"><p class="pub-title">Graduate Teaching Assistant · CS 441 Applied Machine Learning</p><p class="pub-venue">Aug–Dec 2025</p><p class="pub-summary">Led discussion sessions and office hours and supported assignments for a course of 500+ students.</p></div></div><div class="project"><img alt="Graduate Teaching Assistant · CS 107 Data Science Discovery thumbnail" class="project-thumbnail" loading="lazy" src="figures/datasciencediscovery.jpg"/><div class="project-details"><p class="pub-title">Graduate Teaching Assistant · CS 107 Data Science Discovery</p><p class="pub-venue">Aug–Dec 2023</p><p class="pub-summary">Led labs and developed course materials for a course of 1,000+ students. Recognized on the List of Teachers Ranked as Excellent by Their Students.</p></div></div></section>
+
+<!-- Blog -->
+<section class="tab-content" id="blogs" style="display: none;">
+
+    <!-- <h2>Blog</h2> -->
+
+    <p class="section-intro">
+        Thoughts on research, technology, personal growth, and life as a PhD student.
+        Browse
+        <a href="https://medium.com/@aditiitiwari2000"
+           target="_blank"
+           rel="noopener noreferrer">my Medium profile</a>
+        for more writing.
+    </p>
+
+    <!-- October 2025 -->
+    <div class="project">
+        <img
+            alt="Understanding Counterfactual Reasoning and World Models"
+            class="project-thumbnail"
+            src="worldmodel.png"
+            loading="lazy"
+        />
+
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://medium.com/@aditiitiwari2000/understanding-counterfactual-reasoning-and-world-models-a645c5fea99b"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Understanding Counterfactual Reasoning and World Models
+                </a>
+            </p>
+
+            <p class="pub-venue">
+                Medium | October 2025
+            </p>
+        </div>
+    </div>
+
+    <!-- September 2025 -->
+    <div class="project">
+        <img
+            alt="You're Already Enough"
+            class="project-thumbnail"
+            src="blog1.png"
+            loading="lazy"
+        />
+
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://medium.com/@aditiitiwari2000/youre-already-enough-a-gentle-reminder-from-a-friend-8dc18f4b77d0"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    You’re Already Enough: A Gentle Reminder from a Friend
+                </a>
+            </p>
+
+            <p class="pub-venue">
+                Medium | September 2025
+            </p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img
+            alt="The PhD Marathon"
+            class="project-thumbnail"
+            src="blog2.png"
+            loading="lazy"
+        />
+
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://medium.com/@aditiitiwari2000/the-phd-marathon-when-it-feels-like-youre-running-alone-5410644f2390"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    The PhD Marathon: When It Feels Like You’re Running Alone
+                </a>
+            </p>
+
+            <p class="pub-venue">
+                Medium | September 2025
+            </p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img
+            alt="How to Start Your Research Journey"
+            class="project-thumbnail"
+            src="researchblog.png"
+            loading="lazy"
+        />
+
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://medium.com/@aditiitiwari2000/how-to-start-your-research-journey-a-beginners-guide-to-reading-papers-2644bab7aada"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    How to Start Your Research Journey: A Beginner’s Guide to Reading Papers
+                </a>
+            </p>
+
+            <p class="pub-venue">
+                Medium | September 2025
+            </p>
+        </div>
+    </div>
+
+    <!-- Earlier articles -->
+    <div class="project">
+        <img
+            alt="Introduction to 360-Degree Videos"
+            class="project-thumbnail"
+            src="figures/360blog.png"
+            loading="lazy"
+        />
+
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://medium.com/@aditiitiwari2000/introduction-to-360-degree-videos-c578a7bc341e"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Introduction to 360-Degree Videos
+                </a>
+            </p>
+
+            <p class="pub-venue">
+                Published on Medium
+            </p>
+        </div>
+    </div>
+
+    <div class="project">
+        <img
+            alt="Cryptography and Cryptosystems"
+            class="project-thumbnail"
+            src="figures/crpyto.png"
+            loading="lazy"
+        />
+
+        <div class="project-details">
+            <p class="pub-title">
+                <a href="https://medium.com/@aditiitiwari2000/cryptography-and-cryptosystems-ecd7f92d7eed"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Cryptography and Cryptosystems
+                </a>
+            </p>
+
+            <p class="pub-venue">
+                Published on Medium
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- Beyond Research -->
+<section class="tab-content" id="gallery" style="display: none;">
+    <h2>Beyond Research</h2>
+
+    <p class="section-intro">
+        A little collection of things I love making and moments I love capturing.
+    </p>
+
+    <div class="personal-gallery" id="personalGallery"></div>
+
+    <p>
+        <a href="#home" onclick="showTab('home'); return false;">
+            &larr; Back to Home
+        </a>
+    </p>
+</section>
+
+<!-- Full-screen photo viewer -->
+<div id="galleryLightbox" class="gallery-lightbox"
+     role="dialog" aria-modal="true" aria-label="Photo viewer"
+     aria-hidden="true">
+
+    <button class="gallery-close" aria-label="Close photo viewer"
+            onclick="closeGalleryPhoto()">&times;</button>
+
+    <button class="gallery-prev" aria-label="Previous photo"
+            onclick="changeGalleryPhoto(-1)">&#10094;</button>
+
+    <figure>
+        <img id="galleryFullImage" alt="">
+        <figcaption id="galleryCaption"></figcaption>
+    </figure>
+
+    <button class="gallery-next" aria-label="Next photo"
+            onclick="changeGalleryPhoto(1)">&#10095;</button>
+</div>
+
+
+<!-- Beyond Research -->
+
+<!-- news -->
+<!-- <section id="news" class="tab-content" style="display: none;">
                 <h2>News</h2>
             
                 <div class="news-entry">
@@ -545,80 +595,66 @@
                     </p>
                 </div>
             </section> -->
-            
-
 </main>
-        
-        <!-- footer -->
-
-
-
-    <footer>
-        <div class="footer-columns">
-            <!-- Contact section -->
-            <section>
-                <p>
+<!-- footer -->
+<footer>
+<div class="footer-columns">
+<!-- Contact section -->
+<section>
+<p>
                     Contact me at: 
-                    <br>
-                    <i class="fa fa-envelope-square" style="font-size:16px;color:rgb(133, 132, 132)"></i> <a href="mailto:aditit5@illinois.edu">aditit5@illinois.edu</a>
-                    <br>
-                    <i class="fa fa-envelope-square" style="font-size:16px;color:rgb(133, 132, 132)"></i> <a href="mailto:aditiitiwari2000@gmail.com">aditiitiwari2000@gmail.com</a>
-                </p>
-            </section>
-      
-            <!-- Social Profiles section -->
-            <section>
-                <p>
+                    <br/>
+<i class="fa fa-envelope-square" style="font-size:16px;color:rgb(133, 132, 132)"></i> <a href="mailto:aditit5@illinois.edu">aditit5@illinois.edu</a>
+<br/>
+<!-- <i class="fa fa-envelope-square" style="font-size:16px;color:rgb(133, 132, 132)"></i> <a href="mailto:aditiitiwari2000@gmail.com">aditiitiwari2000@gmail.com</a> -->
+</p>
+</section>
+<!-- Social Profiles section -->
+<section>
+<p>
                     Find me at:
-                    <br>
-                    <i class="fa-brands fa-linkedin" style="font-size:16px;color:rgb(10, 102, 194)"></i> <a href="https://www.linkedin.com/in/aditiitiwari2000/" target="_blank">aditiitiwari2000</a>
-                    <br>
-                    <i class="fa-brands fa-github-square" style="font-size:16px" class="fa"></i> <a href="https://github.com/adititiwari19" target="_blank">adititiwari19</a>
-                    <br>
-                    <i class="ai ai-google-scholar-square" style="font-size:16px;color:rgb(55, 131, 207)"></i> <a href="https://scholar.google.com/citations?user=qntxQjcAAAAJ&hl=en" target="_blank">adititiwari</a>
-                    <br>
-                    <i class="fa-brands fa-square-x-twitter" style="font-size:16px;color:black"></i> <a href="https://twitter.com/adititiwari19" target="_blank">adititiwari19</a>
-                    <br>
-                    <i class="fa-brands fa-medium" style="font-size:16px;color:rgb(0, 0, 0)"></i> 
-                    <a href="https://medium.com/@aditiitiwari2000" target="_blank">aditiitiwari2000</a>
-                </p>
-            </section>
-      
-            <!-- Resume section -->
-            <section>
-                <p>
+                    <br/>
+<i class="fa-brands fa-linkedin" style="font-size:16px;color:rgb(10, 102, 194)"></i> <a href="https://www.linkedin.com/in/aditiitiwari2000/" target="_blank">aditiitiwari2000</a>
+<br/>
+<i class="fab fa-github" style="font-size:16px; color:#333;"></i>
+<a href="https://github.com/adititiwari19"
+   target="_blank"
+   rel="noopener noreferrer">adititiwari19</a>
+<br/>
+<i class="ai ai-google-scholar-square" style="font-size:16px;color:rgb(55, 131, 207)"></i> <a href="https://scholar.google.com/citations?user=qntxQjcAAAAJ&amp;hl=en" target="_blank">adititiwari</a>
+<br/>
+<i class="fa-brands fa-square-x-twitter" style="font-size:16px;color:black"></i> <a href="https://twitter.com/adititiwari19" target="_blank">adititiwari19</a>
+<br/>
+<i class="fa-brands fa-medium" style="font-size:16px;color:rgb(0, 0, 0)"></i>
+<a href="https://medium.com/@aditiitiwari2000" target="_blank">aditiitiwari2000</a>
+</p>
+</section>
+<!-- Resume section -->
+<section>
+<p>
                     Download:
-                    <br>
-                    <i class="fa fa-file" style="font-size:14px;color:rgb(133, 132, 132)"></i> <a href="CV.pdf" download>CV</a>
-                </p>
-            </section>
-        </div>
-            
-    </footer>
-
-     <!-- Add the Inspired By & Last Updated Info Here -->
-     <!-- <div class="footer-quote">
+                    <br/>
+<i class="fa fa-file" style="font-size:14px;color:rgb(133, 132, 132)"></i> <a download="" href="CV.pdf">CV</a>
+</p>
+</section>
+</div>
+</footer>
+<!-- Add the Inspired By & Last Updated Info Here -->
+<!-- <div class="footer-quote">
         <p>"A ship in harbor is safe, but that is not what ships are built for." – John A. Shedd</p>
     </div> -->
-
-     <div class="footer-bottom">
-        <p> 
-            <span>Design inspired by <a href="https://savya08.github.io/" target="_blank">Savya Khosla</a></span> |
-            <span>Template on <a href="https://github.com/adititiwari19/adititiwari19.github.io" target="_blank">GitHub</a></span> |
-            <span>Last updated: Feb 2025</span>
-        </p>
-    </div>
-
-    <!-- Dark Mode -->
-    <button id="darkModeToggle">🌙 Dark Mode</button>
-
-    <!-- Back to Top Button -->
-    <button id="topBtn" onclick="scrollToTop()">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <script src="script.js"></script>
-
-</body>
-
+<div aria-label="A thought to carry with you" class="footer-quote"><p aria-live="off" id="footerQuote">Clarity doesn’t come before action. It comes from action.</p></div><div class="footer-bottom">
+<p>
+ 
+            <span>Template on <a href="https://github.com/adititiwari19/adititiwari19.github.io" target="_blank">GitHub</a></span> 
+            <span>Last updated: September 2026</span>
+</p>
+</div>
+<!-- Dark Mode -->
+<button id="darkModeToggle">🌙 Dark Mode</button>
+<!-- Back to Top Button -->
+<button id="topBtn" onclick="scrollToTop()">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+<script src="script.js"></script>
 </html>
